@@ -1,0 +1,104 @@
+:root {
+  /* color */
+  --color-black: #373c45;
+  --color-blue: #367ec0;
+  --color-yellow: #f8b524;
+  --color-pink: #ff737b;
+  --color-white: #ffffff;
+
+  /* size */
+  --btn-margin: 5px;
+  --item-marign: 10px;
+  --item-content-margin: 15px;
+
+  --font-size: 16px;
+  --btn-img-size: 60px;
+  --thumbnail-img-size: 50px;
+  --itembox-size: 63.6%;
+  --item-size: 60px;
+
+  --border-radius: 5px;
+
+  /* animation */
+  --transition-time: 300ms ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-black);
+}
+
+.btns_filtering {
+  display: flex;
+  align-items: center;
+}
+
+.btn,
+.logo {
+  cursor: pointer;
+  transition: var(--transition-time); /*ease, linear 미묘한 차이*/
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: var(--btn-margin);
+}
+
+.imgBtn {
+  width: var(--btn-img-size);
+}
+
+.colorBtn {
+  font-size: var(--font-size);
+  padding: var(--font-size);
+  border-radius: var(--border-radius);
+}
+
+.blue {
+  background-color: var(--color-blue);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+.pink {
+  background-color: var(--color-pink);
+}
+
+.btn:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.items {
+  width: var(--itembox-size);
+  height: var(--itembox-size);
+  padding-left: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  height: var(--item-size);
+  margin-bottom: var(--item-marign);
+}
+
+.thumbnail {
+  margin-left: var(--item-content-margin);
+  width: var(--thumbnail-img-size);
+}
+
+.item_descriptions {
+  margin-left: var(--item-content-margin);
+  font-size: var(--font-size);
+}
