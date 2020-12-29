@@ -14,7 +14,7 @@
   --font-size: 16px;
   --btn-img-size: 60px;
   --thumbnail-img-size: 50px;
-  --itembox-size: 63.6%;
+  --itembox-size: 480px;
   --item-size: 60px;
 
   --border-radius: 5px;
@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
   background-color: var(--color-black);
 }
 
