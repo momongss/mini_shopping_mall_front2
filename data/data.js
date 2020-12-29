@@ -18,7 +18,7 @@ for (let type of classes['type']){
                     'size': size,
                     'color': color,
                     'sex': sex,
-                    'image': `/img/${color}_${type.slice(0, 1)}`
+                    'imgPath': `/img/${color}_${type.slice(0, 1)}.png`
                 });
             }
         }
@@ -26,4 +26,4 @@ for (let type of classes['type']){
 }
 
 const itemListJSON = JSON.stringify(itemList, null, '\t');
-fs.writeFileSync('items.json', itemListJSON);
+fs.writeFileSync('data.json', itemListJSON);
