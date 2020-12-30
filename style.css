@@ -33,7 +33,7 @@ body {
   background-color: var(--color-black);
 }
 
-.btns_filtering {
+.buttons {
   display: flex;
   align-items: center;
 }
